@@ -1,5 +1,5 @@
-import React, { useState } from "react";   // ✅ import useState
-import { jsPDF } from "jspdf";             // ✅ import jsPDF
+import React, { useState } from "react";
+import { jsPDF } from "jspdf";            
 import Slideshow from "../components/Slideshow";
 
 function Home() {
