@@ -61,13 +61,15 @@ function Contact() {
   };
 
   return (
-    <div className="container py-5">
+    // reduce bottom padding so CTA sits closer to footer
+    <div className="container pt-5 pb-3">
       <h1 className="fw-bold text-center text-success mb-2">Contact Us</h1>
       <p className="text-center lead mb-5">
         Get in touch with us for any inquiries, questions, or assistance
       </p>
 
-      <div className="row">
+      {/* Make row stretch columns to equal height */}
+      <div className="row align-items-stretch">
         {/* Contact Information */}
         <div className="col-lg-6 mb-4">
           <div className="card shadow-sm h-100">
@@ -153,8 +155,8 @@ function Contact() {
         </div>
 
         {/* Contact Form */}
-        <div className="col-lg-6">
-          <div className="card shadow-sm">
+        <div className="col-lg-6 mb-4">
+          <div className="card shadow-sm h-100">
             <div className="card-header bg-success text-white">
               <h4 className="mb-0">Send us a Message</h4>
             </div>
@@ -245,7 +247,7 @@ function Contact() {
       </div>
 
       {/* Google Map Section */}
-      <div className="row mt-5">
+      <div className="row mt-4">
         <div className="col-12">
           <div className="card shadow-sm">
             <div className="card-header bg-success text-white">
@@ -274,7 +276,7 @@ function Contact() {
       </div>
 
       {/* Quick Contact Cards */}
-      <div className="row mt-5">
+      <div className="row mt-3 mb-0">
         <div className="col-md-4 mb-3">
           <div className="card text-center border-success">
             <div className="card-body">
