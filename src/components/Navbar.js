@@ -1,20 +1,23 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
+  const location = useLocation();
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
       <div className="container">
         {/* Brand Logo + Name */}
-        <a className="navbar-brand fw-bold d-flex align-items-center" href="#home">
+        <Link className="navbar-brand fw-bold d-flex align-items-center" to="/">
           <img 
-            src="/pnc-logo.png"   // replace with your actual logo path
+            src="/pnc-logo.png"
             alt="PnC Logo" 
             width="40" 
             height="40" 
             className="me-2"
           />
           PAMANTASAN NG CABUYAO
-        </a>
+        </Link>
 
         {/* Mobile Toggle */}
         <button
@@ -30,16 +33,52 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#home">Home</a>
+              <Link 
+                className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} 
+                to="/"
+              >
+                Home
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#about">About</a>
+              <Link 
+                className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} 
+                to="/about"
+              >
+                About
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#courses">Courses</a>
+              <Link 
+                className={`nav-link ${location.pathname === '/courses' ? 'active' : ''}`} 
+                to="/courses"
+              >
+                Courses
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#admission">Admission</a>
+              <Link 
+                className={`nav-link ${location.pathname === '/admission' ? 'active' : ''}`} 
+                to="/admission"
+              >
+                Admission
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link 
+                className={`nav-link ${location.pathname === '/gallery' ? 'active' : ''}`} 
+                to="/gallery"
+              >
+                Gallery
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link 
+                className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`} 
+                to="/contact"
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
