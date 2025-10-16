@@ -3,90 +3,75 @@ import React, { useState } from "react";
 function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
-  // Sample gallery data - in a real app, these would be actual images
   const galleryItems = [
     {
       id: 1,
-      title: "PNC Main Campus",
+      title: "PNC Bagong Cabuyao  Hall",
       category: "campus",
-      image: "/pnc-header.png", // Using existing image
+      image: "/images/PnC_Bagong_Cabuyao_Hall.png",
       description: "Beautiful view of the main campus building"
     },
     {
       id: 2,
       title: "Graduation Ceremony 2024",
       category: "events",
-      image: "/pnc-logo.png", // Using existing image as placeholder
+      image: "/images/PnC_Commencement_Exercise.png",
       description: "Annual graduation ceremony celebrating our graduates"
     },
     {
       id: 3,
       title: "Computer Laboratory",
       category: "academics",
-      image: "/pnc-header.png",
+      image: "/images/PnC_Computer_Laboratory.jpg",
       description: "State-of-the-art computer laboratory for IT students"
     },
     {
       id: 4,
       title: "Student Activities",
       category: "campus",
-      image: "/pnc-logo.png",
+      image: "/images/PnC_Students.jpg",
       description: "Students participating in various campus activities"
     },
     {
       id: 5,
-      title: "Recognition Day",
-      category: "events",
-      image: "/pnc-header.png",
-      description: "Academic excellence recognition ceremony"
-    },
-    {
-      id: 6,
       title: "Library Facilities",
       category: "academics",
-      image: "/pnc-logo.png",
+      image: "/images/PnC_Library.jpg",
       description: "Modern library with extensive collection of books"
     },
     {
-      id: 7,
+      id: 6,
       title: "Sports Festival",
       category: "events",
-      image: "/pnc-header.png",
+      image: "/images/PnC_Sports_Festival.jpg",
       description: "Annual sports festival and competitions"
     },
     {
-      id: 8,
+      id: 7,
       title: "Community Outreach",
       category: "outreach",
-      image: "/pnc-logo.png",
+      image: "/images/PnC_Students.jpg",
       description: "Students and faculty engaging in community service"
     },
     {
-      id: 9,
+      id: 8,
       title: "Science Laboratory",
       category: "academics",
-      image: "/pnc-header.png",
+      image: "/images/PnC_Bagong_Cabuyao_Hall.png",
       description: "Well-equipped science laboratory for research"
-    },
+    },   
     {
-      id: 10,
-      title: "Campus Garden",
-      category: "campus",
-      image: "/pnc-logo.png",
-      description: "Beautiful landscaped gardens around the campus"
-    },
-    {
-      id: 11,
+      id: 9,
       title: "Medical Mission",
       category: "outreach",
-      image: "/pnc-header.png",
+      image: "/images/PnC_Medical_Mission.png",
       description: "Free medical mission for the local community"
     },
     {
-      id: 12,
-      title: "Cultural Night",
+      id: 10,
+      title: "Cultural Day",
       category: "events",
-      image: "/pnc-logo.png",
+      image: "/images/PnC_Cultural_Day.png",
       description: "Annual cultural night showcasing student talents"
     }
   ];

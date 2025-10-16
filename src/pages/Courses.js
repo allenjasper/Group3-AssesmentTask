@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Courses() {
   const programs = [
@@ -75,9 +76,9 @@ function Courses() {
                       <div className="fw-bold">{course.units}</div>
                     </div>
                   </div>
-                  <button className="btn btn-outline-success w-100 mt-3">
-                    Learn More
-                  </button>
+                  <Link to="/admission" className="btn btn-outline-success w-100 mt-3">
+                    Apply Now
+                  </Link>
                 </div>
               </div>
             </div>

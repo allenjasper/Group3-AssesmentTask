@@ -16,7 +16,6 @@ function Contact() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
     
-    // Clear error when user starts typing
     if (errors[name]) {
       setErrors({ ...errors, [name]: "" });
     }
@@ -49,28 +48,23 @@ function Contact() {
 
     setIsSubmitting(true);
     
-    // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitMessage("Thank you for your message! We will get back to you soon.");
       setFormData({ name: "", email: "", subject: "", message: "" });
       
-      // Clear success message after 5 seconds
       setTimeout(() => setSubmitMessage(""), 5000);
     }, 1000);
   };
 
   return (
-    // reduce bottom padding so CTA sits closer to footer
     <div className="container pt-5 pb-3">
       <h1 className="fw-bold text-center text-success mb-2">Contact Us</h1>
       <p className="text-center lead mb-5">
         Get in touch with us for any inquiries, questions, or assistance
       </p>
 
-      {/* Make row stretch columns to equal height */}
       <div className="row align-items-stretch">
-        {/* Contact Information */}
         <div className="col-lg-6 mb-4">
           <div className="card shadow-sm h-100">
             <div className="card-header bg-success text-white">
@@ -133,7 +127,6 @@ function Contact() {
                 </div>
               </div>
 
-              {/* Social Media Links */}
               <div className="row">
                 <div className="col-12">
                   <h6 className="text-success">Follow Us</h6>
@@ -154,7 +147,6 @@ function Contact() {
           </div>
         </div>
 
-        {/* Contact Form */}
         <div className="col-lg-6 mb-4">
           <div className="card shadow-sm h-100">
             <div className="card-header bg-success text-white">
@@ -246,7 +238,6 @@ function Contact() {
         </div>
       </div>
 
-      {/* Google Map Section */}
       <div className="row mt-4">
         <div className="col-12">
           <div className="card shadow-sm">
@@ -275,7 +266,6 @@ function Contact() {
         </div>
       </div>
 
-      {/* Quick Contact Cards */}
       <div className="row mt-3 mb-0">
         <div className="col-md-4 mb-3">
           <div className="card text-center border-success">

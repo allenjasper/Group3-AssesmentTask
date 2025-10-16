@@ -7,7 +7,6 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
       <div className="container">
-        {/* Brand Logo + Name */}
         <Link className="navbar-brand fw-bold d-flex align-items-center" to="/">
           <img 
             src="/pnc-logo.png"
@@ -19,7 +18,6 @@ function Navbar() {
           PAMANTASAN NG CABUYAO
         </Link>
 
-        {/* Mobile Toggle */}
         <button
           className="navbar-toggler"
           type="button"
@@ -29,7 +27,6 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         
-        {/* Navbar Links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">

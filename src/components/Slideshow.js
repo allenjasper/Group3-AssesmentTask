@@ -1,6 +1,3 @@
-import campus from "../images/PnC_Bagong_Cabuyao_Hall.png";
-import students from "../images/PnC_Students.jpg";
-
 function Slideshow() {
   return (
     <div 
@@ -12,7 +9,7 @@ function Slideshow() {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img 
-            src={campus} 
+            src="/images/PnC_Bagong_Cabuyao_Hall.png" 
             className="d-block w-100" 
             alt="PNC Campus" 
             style={{ maxHeight: "500px", objectFit: "cover" }}
@@ -20,7 +17,7 @@ function Slideshow() {
         </div>
         <div className="carousel-item">
           <img 
-            src={students} 
+            src="/images/PnC_Students.jpg" 
             className="d-block w-100" 
             alt="Students" 
             style={{ maxHeight: "500px", objectFit: "cover" }}
