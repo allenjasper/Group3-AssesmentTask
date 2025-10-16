@@ -92,7 +92,7 @@ export default function Admission() {
     y += 16;
     doc.text(`Gender: ${formData.gender}`, 40, y);
 
-    y = 200;
+    y += 20;
     doc.setFont("helvetica", "bold");
     doc.text("ACADEMIC INFORMATION", 40, y);
     y += 18;
@@ -174,7 +174,6 @@ export default function Admission() {
     link.click();
     link.remove();
     setTimeout(() => URL.revokeObjectURL(link.href), 5000);
-    alert("Application submitted — filled form downloaded.");
   };
 
   return (
@@ -207,26 +206,6 @@ export default function Admission() {
                 <li>Certificate of Good Moral Character</li>
                 <li>Birth Certificate (PSA)</li>
               </ul>
-
-              <hr />
-
-              <div className="d-grid gap-2">
-                <a
-                  href="/files/admission-form.pdf"
-                  className="btn btn-outline-success"
-                  download
-                >
-                  Download Blank Admission Form (PDF)
-                </a>
-                <a
-                  href="/files/admission-form.pdf"
-                  className="btn btn-outline-secondary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Open Blank Form (Browser)
-                </a>
-              </div>
             </div>
           </div>
         </div>
