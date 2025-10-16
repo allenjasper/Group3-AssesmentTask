@@ -50,7 +50,7 @@ function Gallery() {
       id: 7,
       title: "Community Outreach",
       category: "outreach",
-      image: "/images/PnC_Students.jpg",
+      image: "/images/PnC_Community_Outreach.jpg",
       description: "Students and faculty engaging in community service"
     },
     {

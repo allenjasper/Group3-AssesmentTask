@@ -5,7 +5,6 @@ import Slideshow from "../components/Slideshow";
 function Home() {
   return (
     <div>
-      {/* Hero Section with Slideshow */}
       <section className="mb-5">
         <Slideshow />
         <div className="text-center mt-4">
@@ -14,7 +13,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Vision & Mission Section */}
       <section className="container py-5">
         <div className="row text-center">
           <div className="col-md-6 mb-4">
@@ -39,7 +37,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Core Values Section */}
       <section className="bg-light py-5">
         <div className="container">
           <h2 className="text-center text-success mb-3">Core Values</h2>
@@ -72,7 +69,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Quick Links Section */}
       <section className="container py-5">
         <h2 className="text-center text-success mb-5">Explore PNC</h2>
         <div className="row">
@@ -119,7 +115,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Call to Action Section */}
       <section className="bg-success text-white py-5">
         <div className="container text-center">
           <h2 className="mb-3">Ready to Start Your Journey?</h2>
